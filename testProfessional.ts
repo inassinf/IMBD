@@ -1,11 +1,11 @@
 import { Professional } from "./professional";
 
-let pelicula1 = new Professional("Nomadland", 2, 3,5, false, "EEUU", 3, "Chloe Zhao");
-let pelicula2 = new Professional("Parasitos", 4, 2, 3, true, "Corea del Sur", 4, "Bong Joon-ho");
-let pelicula3 = new Professional("La Forma del agua", 5, 2, 4, true, "EEUU", 4, "Guillermo del Toro");
+let will = new Professional("Will Smith",54,  80, 1.88, false, "americano", 4, "Actor");
+let spielberg = new Professional("Steven Spielberg", 74, 70, 1.72, true, "americano", 50, "Director");
+let penelope = new Professional("Penelope Cruz", 48, 70, 1.69, false, "espaniola", 1, "Actriz");
 
-console.log(pelicula1.printDatos());
-console.log(pelicula2.printDatos());
-console.log(pelicula3.printDatos());
+console.log(will.printDatos());
+console.log(spielberg.printDatos());
+console.log(penelope.printDatos());
 
 

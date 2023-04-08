@@ -22,13 +22,17 @@ export class Professional {
           this.profession = profession;
                  
     }
-  
-    printDatos():void {
-        console.log("Los datos son los siguientes: " + "Nombre: " + this.name + " Edad: " + this.age +
-        " Peso: " + this.weight + " Altura: " + this.height + " Retirado: " + this.isRetired + " Pais: " +
-         this.nationality + " Oscars: "  + this.oscarsNumber  + " Profesion: " + this.profession);
-   }
+    printName():string{ 
+      return( this.name)}
+    
+    printDatos():string { return ("Los datos son los siguientes: Nombre: " + this.name + " Edad: " +
+    " Peso: " + this.weight + " Altura: " + this.height + " Retirado: " + this.isRetired + " Pais: "
+    + this.nationality + " Oscars: " + this.oscarsNumber + " Profesion: " + this.profession)
+    
 
-   
+    } 
 
 }
+
+// Los datos son los siguientes: Nombre: ${this.name} Edad: ${this.age} Peso: ${this.weight} Altura: ${this.height} Retirado: ${this.isRetired}
+//     // Pais: ${this.nationality} Oscars: ${this.oscarsNumber} Profesion: ${this.profession}``}
