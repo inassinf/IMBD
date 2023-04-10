@@ -12,9 +12,22 @@ var Movie = /** @class */ (function () {
         this.nacionality = nacionality;
         this.genre = genre;
     }
+    // actorsName(){
+    //     let nombre:Professional;
+    //     for(let i:number=0; i<this.actors.length; i++){
+    //        nombre= this.actors[i];
+    //     }
+    //     return nombre;
+    //   }
     Movie.prototype.print = function () {
-        return ("Los creditos de la pelicula son: " + "Titulo: " + this.title + " anio de creacion: " + this.releaseYear +
-            " Pais: " + this.nacionality + " Genero: " + this.genre + " Actores: " + this.actors + " Director:" + this.director.printName() +
+        console.log("Los creditos de la pelicula son: " + "Titulo: " + this.title + " anio de creacion: " + this.releaseYear +
+            " Pais: " + this.nacionality + " Genero: " + this.genre);
+        for (var i = 0; i < this.actors.length; i++) {
+            var nombre = void 0;
+            nombre = this.actors[i].printDatos();
+            console.log(" Actores: " + nombre);
+        }
+        console.log(" Director:" + this.director.printName() +
             " Guionista: " + this.writer.printName() + " Idioma: " + this.language + " Plataforma " + " isMCU: " + this.isMCU + " Protagonista: "
             + this.mainCharacterName + " Productor: " + this.producer + " Distribuidor: " + this.distributor + " Genero: " + this.genre);
     };

@@ -25,7 +25,7 @@ export class Professional {
     printName():string{ 
       return( this.name)}
     
-    printDatos():string { return ("Los datos son los siguientes: Nombre: " + this.name + " Edad: " +
+    printDatos():string { return ("Los datos del actor son los siguientes: Nombre: " + this.name + " Edad: " +
     " Peso: " + this.weight + " Altura: " + this.height + " Retirado: " + this.isRetired + " Pais: "
     + this.nationality + " Oscars: " + this.oscarsNumber + " Profesion: " + this.profession)
     

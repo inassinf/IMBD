@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var movie_1 = require("./movie");
+var Imdb_1 = require("./Imdb");
+var testMovie_1 = require("./testMovie");
+var testMovie_2 = require("./testMovie");
+var volver = new movie_1.Movie("Volver", 2006, "Espania", "Drama");
+var marAdentro = new movie_1.Movie("Mar Adentro", 2004, "Espania", "Drama");
+// let peliculasFavoritas = [tiburon, titanic, volver, marAdentro];
+var cine = new Imdb_1.Imdb([testMovie_2.tiburon, testMovie_1.titanic, volver, marAdentro]);
+console.log("Mis pelis favoritas son: " + cine.printMovie());
